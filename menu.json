@@ -1,0 +1,241 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "nombre": "Pizza Pequena",
+      "precio": 10,
+      "categoria": 2
+    },
+    {
+      "id": "2",
+      "nombre": "Pizza Mediana",
+      "precio": 15,
+      "categoria": 2
+    },
+    {
+      "id": "3",
+      "nombre": "Pizza Grande",
+      "precio": 1.1,
+      "categoria": 2
+    },
+    {
+      "id": "4",
+      "nombre": "Pie de Limon",
+      "precio": 8,
+      "categoria": 2
+    },
+    {
+      "id": "5",
+      "nombre": "Pie de Parchita",
+      "precio": 5,
+      "categoria": 2
+    },
+    {
+      "id": "6",
+      "nombre": "Torta de Chocolate",
+      "precio": 9,
+      "categoria": 2
+    },
+    {
+      "id": "7",
+      "nombre": "Torta de Fresa",
+      "precio": 1.1,
+      "categoria": 2
+    },
+    {
+      "id": "8",
+      "nombre": "Jugo de Naranja",
+      "precio": 1.1,
+      "categoria": 3
+    },
+    {
+      "id": "9",
+      "nombre": "Jugo de Parchita",
+      "precio": 1.1,
+      "categoria": 3
+    },
+    {
+      "id": "10",
+      "nombre": "Jugo de Fresa",
+      "precio": 1.1,
+      "categoria": 3
+    },
+    {
+      "id": "11",
+      "nombre": "Cheleta Ahumada",
+      "precio": 1.1,
+      "categoria": 4
+    },
+    {
+      "id": "12",
+      "nombre": "Pollo en Brasa",
+      "precio": 6,
+      "categoria": 4
+    },
+    {
+      "id": "13",
+      "nombre": "Parrilla",
+      "precio": 6,
+      "categoria": 4
+    },
+    {
+      "id": "14",
+      "nombre": "Pasticho",
+      "precio": 6,
+      "categoria": 4
+    },
+    {
+      "id": "15",
+      "nombre": "Carne en Vara",
+      "precio": 6,
+      "categoria": 4
+    },
+    {
+      "id": "16",
+      "nombre": "Capuchino",
+      "precio": 2,
+      "categoria": 5
+    },
+    {
+      "id": "17",
+      "nombre": "Cerveza",
+      "precio": 0.5,
+      "categoria": 6
+    },
+    {
+      "id": "18",
+      "nombre": "Ron",
+      "precio": 2,
+      "categoria": 6
+    },
+    {
+      "id": "19",
+      "nombre": "Helado de Fresa",
+      "precio": 2,
+      "categoria": 2
+    },
+    {
+      "id": "20",
+      "nombre": "Helado de Chocolate",
+      "precio": 2,
+      "categoria": 2
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "mesero": "Juan",
+      "mesa": "1",
+      "hora": "19:52",
+      "pedido": [
+        {
+          "id": "5",
+          "nombre": "Pie de Parchita",
+          "precio": 5,
+          "categoria": 2,
+          "cantidad": 1
+        },
+        {
+          "id": "6",
+          "nombre": "Torta de Chocolate",
+          "precio": 9,
+          "categoria": 2,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mesero": "Juan",
+      "mesa": "2",
+      "hora": "11:00",
+      "pedido": [
+        {
+          "id": "16",
+          "nombre": "Capuchino",
+          "precio": 2,
+          "categoria": 5,
+          "cantidad": 1
+        },
+        {
+          "id": "15",
+          "nombre": "Carne en Vara",
+          "precio": 6,
+          "categoria": 4,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "mesero": "Juan",
+      "mesa": "2",
+      "hora": "17:33",
+      "pedido": [
+        {
+          "id": "1",
+          "nombre": "Pizza Pequena",
+          "precio": 10,
+          "categoria": 2,
+          "cantidad": 1
+        },
+        {
+          "id": "2",
+          "nombre": "Pizza Mediana",
+          "precio": 15,
+          "categoria": 2,
+          "cantidad": 1
+        },
+        {
+          "id": "10",
+          "nombre": "Jugo de Fresa",
+          "precio": 1.1,
+          "categoria": 3,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "mesero": "Martin",
+      "mesa": "2",
+      "hora": "19:37",
+      "pedido": [
+        {
+          "id": "18",
+          "nombre": "Ron",
+          "precio": 2,
+          "categoria": 6,
+          "cantidad": 1
+        },
+        {
+          "id": "15",
+          "nombre": "Carne en Vara",
+          "precio": 6,
+          "categoria": 4,
+          "cantidad": 1
+        },
+        {
+          "id": "14",
+          "nombre": "Pasticho",
+          "precio": 6,
+          "categoria": 4,
+          "cantidad": 1
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Cortez",
+      "user": "jcortez",
+      "password": "ccs123"
+    },
+    {
+      "nombre": "Martin",
+      "id": 2
+    }
+  ]
+}
