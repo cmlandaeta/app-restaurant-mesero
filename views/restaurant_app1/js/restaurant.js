@@ -1,7 +1,6 @@
 const user = JSON.parse(localStorage.getItem("user"));
 //console.log(user);
 const btnGuardarCliente = document.querySelector("#guardar-cliente");
-const btnMostrarPedidos = document.querySelector("#mostrar-anterior");
 
 const url = "http://localhost:3007/menu";
 const pedido = "http://localhost:3007/clientes";
@@ -34,7 +33,7 @@ if (!user) {
   usuario.textContent = `Bienvenido, ${user}`;
   const cerrarBtn = document.querySelector("#cerrar-btn");
   cerrarBtn.addEventListener("click", async (e) => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("usuario");
     window.location.href = "../login/index.html";
   });
 }
@@ -44,7 +43,6 @@ if (!user) {
 document.addEventListener("DOMContentLoaded", () => {
   listarClientedeMesero();
 });
-btnMostrarPedidos.addEventListener("click", mostrarSeccion2);
 
 btnGuardarCliente.addEventListener("click", guardarCliente);
 
@@ -54,7 +52,7 @@ function guardarCliente() {
   const mesa = document.querySelector("#mesa").value;
   const hora = document.querySelector("#hora").value;
 
-  camposVacios = [mesa, hora].some((campo) => campo === ""); //valida inputs de una
+  camposVacios = [mesa, hora].some((campo) => campo === "");
 
   if (camposVacios) {
     //si los campos estan vacios
@@ -90,9 +88,8 @@ function mostrarSecciones() {
   const secciones = document.querySelectorAll(".d-none");
 
   // console.log(secciones)
-  secciones.forEach((seccion) => seccion.classList.remove("d-none"));
 
-  btnMostrarPedidos.classList.add("d-none");
+  secciones.forEach((seccion) => seccion.classList.remove("d-none"));
 }
 
 function obtenerMenu() {
@@ -463,14 +460,6 @@ function limpiarHTML() {
   }
 }
 
-function limpiarHTML2() {
-  const contenido = document.querySelector("#resumen2 #listado-Pedidos");
-  //console.log(contenido);
-  while (contenido.firstChild) {
-    contenido.removeChild(contenido.firstChild);
-  }
-}
-
 async function enviarCuenta() {
   try {
     await fetch(pedido, {
@@ -482,22 +471,14 @@ async function enviarCuenta() {
       body: JSON.stringify({ ...cliente, mesero: user, id: "" }),
     });
 
-    //window.location.href = "./index.html";
+    window.location.href = "./index.html";
   } catch (error) {
     console.log(error);
   }
 }
-//mostrarSeccion2();
-
-function mostrarSeccion2() {
-  limpiarHTML2();
-  const seccion = document.querySelector("#resumen2");
-
-  seccion.classList.remove("d-none");
-  listarClientedeMesero();
-}
 
 async function listarClientedeMesero() {
+  const contenido2 = document.querySelector("#resumen2");
   const listaDePedidos = document.querySelector("#listado-Pedidos");
 
   try {

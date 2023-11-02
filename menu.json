@@ -223,6 +223,28 @@
           "cantidad": 1
         }
       ]
+    },
+    {
+      "id": 5,
+      "mesero": "Martin",
+      "mesa": "2",
+      "hora": "10:57",
+      "pedido": [
+        {
+          "id": "4",
+          "nombre": "Pie de Limon",
+          "precio": 8,
+          "categoria": 2,
+          "cantidad": 1
+        },
+        {
+          "id": "19",
+          "nombre": "Helado de Fresa",
+          "precio": 2,
+          "categoria": 2,
+          "cantidad": 1
+        }
+      ]
     }
   ],
   "users": [
